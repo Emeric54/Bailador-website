@@ -28,7 +28,6 @@ get '/deps' => sub {
 
 get '/ressources' => sub {
     my $raw-md = LWP::Simple.get($ressources-md);
-    say $raw-md;
     my $md = Text::Markdown.new($raw-md);
     my $code = $md.render;
     return template("ressources.html", {
