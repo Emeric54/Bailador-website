@@ -3,7 +3,7 @@
     "version"     : "*",
     "perl"        : "6.c",
     "description" : "The bailador.net website",
-    "depends"     : [ "Bailador", "JSON::Fast" ],
+    "depends"     : [ "Bailador", "JSON::Fast", "LWP::Simple", "IO::Socket::SSL", "Text::Markdown" ],
     "tags"        : [ "Web", "HTTP", "Net" ],
     "license"     : "MIT",
     "provides" : {
